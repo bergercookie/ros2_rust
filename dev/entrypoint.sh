@@ -12,7 +12,6 @@ source "$HOME/.bashrc.local"
 
 # Compile the ROS workspace ----------------------------------------------------
 announce "Compiling Workspace packages..."
-compile_ws
+# compile_ws
 
 /bin/bash
-

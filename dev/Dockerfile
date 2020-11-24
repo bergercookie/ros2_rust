@@ -21,6 +21,9 @@ RUN apt-get update && \
     ros-$ROS_VERSION-example-interfaces \
     && rm -rf /var/lib/apt/lists/*
 
+# pip dependencies
+RUN pip3 install toml typing
+
 # install rust dependencies ----------------------------------------------------
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
