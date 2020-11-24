@@ -1,0 +1,9 @@
+function compile_ws() {
+    cd $(dirname $(readlink -f --canonicalize ${BASH_SOURCE[0]}))/../../../..
+    colcon build --symlink-install
+}
+
+source /opt/ros/foxy/setup.bash
+test -f $HOME/ros_ws/install/setup.bash && source $HOME/ros_ws/install/setup.bash
+
+export PROMPT_COMMAND="history -a"
