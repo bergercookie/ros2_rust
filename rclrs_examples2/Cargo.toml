@@ -1,0 +1,16 @@
+[package]
+name = "rclrs_examples2"
+version = "0.1.0"
+authors = ["Esteve Fernandez <esteve@apache.org>"]
+edition = "2018"
+
+[[bin]]
+name = "rclrs_subscriber2"
+path = "src/rclrs_subscriber.rs"
+
+[[bin]]
+name = "rclrs_publisher2"
+path = "src/rclrs_publisher.rs"
+
+[dependencies]
+failure = "0.1.5"
